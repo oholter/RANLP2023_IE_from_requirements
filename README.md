@@ -11,7 +11,6 @@ Note: You need requirement sentences extracted from PDF documents to conduct the
 
 2. Download Spacy and NLTK resources:  
 `python -m spacy download en_core_web_sm`
-
 `>>> import nltk`  
 `>>> nltk.download('punkt')`  
 `>>> nltk.download('wordnet')`  
