@@ -52,3 +52,13 @@ Note: Remember to do the experiments both with context and without context.
 
 
 ## Experiments with GPT-3
+In the gpt folder, change the settings in the ``config.json`` file. You need to supply the OpenAI API key.
+
+### Test on one or a number of sentences
+To run the experiment on the requirement with id=1 and id=2:  
+``python -m gpt.runner_one -i 1,2``
+
+
+### Run all the experiments
+``python -m gpt.runner`
+
