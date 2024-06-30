@@ -16,6 +16,6 @@ stanza
 rouge
 jiwer
 pytorch-lightning
-openai
+openai==0.28
 bert-score
 scipy==1.12
