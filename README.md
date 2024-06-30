@@ -60,5 +60,5 @@ To run the experiment on the requirement with id=1 and id=2:
 
 
 ### Run all the experiments
-``python -m gpt.runner`
+``python -m gpt.runner``
 
