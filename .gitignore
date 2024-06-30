@@ -11,3 +11,4 @@ evaluation/__pycache__/
 gpt/__pycache__/
 *.png
 *.swp
+gpt/output.jsonl
