@@ -30,21 +30,22 @@ You will most likely want to use GPUs for training and testing as it can take a 
 You may have to change the paths to the annotated documents in ``run_experiments.sh``.
 
 
-### Do n-fold validation (train n models)
+### n-fold validation experiment
+This will create the experiment structure for an n-fold validation experiment
+Note: Remember to do the experiments both with context and without context.  
 `python -m evaluation.nfold [--input INPUT -n N --output OUTPUT]`
 
-Note: Remember to do the experiments both with context and without context.
 
-### Train n models
+#### Train n models
 ``./evaluation/train_all.sh [EXPERIMENTS_FOLDER]``
 
-### Evaluate n models
+#### Evaluate n models
 `./evaluation/evaluate_all.sh [EXPERIMENTS_FOLDER] [true|false]`
 
-### Aggregate the scores
+#### Aggregate the scores
 `python -m evaluation.aggregate [EXPERIMENTS_FOLDER]`
 
-### Print latex macros
+#### Print latex macros
 ``./evaluation/print_latex [EXPERIMENTS_FOLDER]``
 
 

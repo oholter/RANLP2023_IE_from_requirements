@@ -5,7 +5,9 @@ models/
 output/
 scope_output/
 venv/
+experiments/
 sequence_labelling/__pycache__/
+evaluation/__pycache__/
 gpt/__pycache__/
 *.png
 *.swp

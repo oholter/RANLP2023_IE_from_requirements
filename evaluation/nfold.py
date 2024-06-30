@@ -62,7 +62,7 @@ def main():
     parser = ArgumentParser()
     parser.add_argument("--input",
                         help="the file to split",
-                        default="/home/ole/src/Req_annot/annotations_with_scd/all.jsonl")
+                        default="./data/train.jsonl")
     parser.add_argument("-n",
                         help="the number of folds",
                         type=int,
