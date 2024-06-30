@@ -2,7 +2,7 @@
 
 This repository contains the code used to run the experiments in the paper: Reading Between the Lines: Information Extraction from Textual Requirements, presented at RANLP23.
 
-Note: You need requirement sentences extracted from PDF documents to conduct the experiments. In addition, you need to manually label the sentences with Scope, Condition, and Demand. Tools to extract requirements from PDF documents and convert them into JSON/JSONL are found in the [req_extractor library](https://github.com/oholter/req_extractor).
+Note: You need requirement sentences extracted from PDF documents to conduct the experiments. In addition, you need to manually label the sentences with SCOPE, CONDITION, and DEMAND. Tools to extract requirements from PDF documents and convert them into JSON/JSONL are found in the [req_extractor library](https://github.com/oholter/req_extractor). For the experiments in the paper, I used Prodigy to annotate the sentences, once with context and once without context as described in the paper.
 
 ## Setup the environment
 
