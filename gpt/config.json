@@ -1,0 +1,23 @@
+{
+    "io": {
+        "examples": "/home/ole/src/Req_annot/annotations_with_scd/train.jsonl",
+        "targets": "/home/ole/src/Req_annot/annotations_test_documents/with_scd/ru_hslc_pt5.jsonl",
+        "output": "/home/ole/src/Concat_ner/gpt/output.jsonl"
+    },
+    "openai": {
+        "api_key":"XXXX",
+        "model": "text-davinci-003",
+        "temperature":1,
+        "stop": ["\n"],
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 256
+    },
+    "prompt": {
+        "n_samples": 10,
+        "context": false,
+        "xcontext": true,
+        "strategy": "most similar",
+        "sort": "asc"
+    }
+}

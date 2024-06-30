@@ -1,0 +1,10 @@
+vectors/
+cache/
+sequence_labelling/__pycache__/
+gpt/__pycache__/
+*.png
+models/
+venv/
+*.swp
+output/
+scope_output/
