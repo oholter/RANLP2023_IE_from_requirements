@@ -17,7 +17,7 @@ EXP_DIR=$1
 for f in $EXP_DIR/*; do
         if [ -d "$f" ]; then
             echo $f
-            python -m concat_ner.runner \
+            python -m sequence_labelling.runner \
                 -e 4 \
                 --save $f/model.bin \
                 --train $f/train.jsonl \
