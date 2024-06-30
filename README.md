@@ -25,8 +25,9 @@ You will most likely want to use GPUs for training and testing as it can take a 
 ### Train one model:
 `python -m sequence_labelling.runner [args]`
 
-To reproduce the experiments with one model run:
-``./run_experiments.sh``
+### Reproduce the experiments using one model:
+``./run_experiments.sh``  
+You may have to change the paths to the annotated documents in ``run_experiments.sh``.
 
 
 ### Do n-fold validation (train n models)
