@@ -3,7 +3,7 @@ import numpy as np
 from tqdm import tqdm
 from abc import ABC, abstractmethod
 from transformers import AutoTokenizer
-from concat_ner.label_encoder import SPECIAL_TAG
+from sequence_labelling.label_encoder import SPECIAL_TAG
 import torch
 from textblob import Word
 import spacy
@@ -285,7 +285,7 @@ class CombinedEncoder(TokenEncoder):
 
 
 if __name__ == '__main__':
-    from concat_ner.label_encoder import LabelEncoder
+    from sequence_labelling.label_encoder import LabelEncoder
     label_encoder = LabelEncoder(["SCOPE", "O"])
     #encoder = CombinedEncoder(label_encoder, "/home/ole/src/Concat_ner/embeddings/domain_vocab.bin")
     #encoder = ClassicTokenEncoder(label_encoder, "/home/ole/src/Concat_ner/embeddings/domain_vocab.bin")

@@ -1,10 +1,11 @@
 vectors/
 cache/
+data/
+models/
+output/
+scope_output/
+venv/
 sequence_labelling/__pycache__/
 gpt/__pycache__/
 *.png
-models/
-venv/
 *.swp
-output/
-scope_output/

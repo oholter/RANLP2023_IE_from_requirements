@@ -1,8 +1,8 @@
 import logging
 import matplotlib.pyplot as plt
 from argparse import ArgumentParser
-from concat_ner.data_handler import DataHandler
-from concat_ner.scope_eval_utils import normalize_scopes, save_output, eval_scopes, create_latex_report
+from sequence_labelling.data_handler import DataHandler
+from sequence_labelling.scope_eval_utils import normalize_scopes, save_output, eval_scopes, create_latex_report
 
 
 def main():

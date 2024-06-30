@@ -18,3 +18,4 @@ jiwer
 pytorch-lightning
 openai
 bert-score
+scipy==1.12

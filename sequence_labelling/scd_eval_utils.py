@@ -6,7 +6,7 @@ from jiwer import wer
 from nltk.translate.meteor_score import single_meteor_score
 from nltk.translate.bleu_score import sentence_bleu, corpus_bleu
 from nltk import word_tokenize
-from concat_ner.XlmrCosineSim import XlmrCosineSim
+from sequence_labelling.XlmrCosineSim import XlmrCosineSim
 from bert_score import score
 
 
@@ -215,7 +215,7 @@ def output_to_scd(output, label):
 
 # todo: change variable names
 def output_to_scd_roberta(output, label):
-    """ 
+    """
     Version for RoBERTa!!
 
     this outputs the tokens that are of one label,

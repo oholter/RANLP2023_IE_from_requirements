@@ -6,8 +6,8 @@ from keras_preprocessing.sequence import pad_sequences
 from transformers import RobertaTokenizer,AdamW, get_linear_schedule_with_warmup
 #from sklearn_crfsuite.metrics import flat_classification_report, flat_f1_score
 from sklearn.metrics import classification_report, f1_score
-from concat_ner.train_eval_utils import create_encodings
-from concat_ner.eval import Evaluator
+from sequence_labelling.train_eval_utils import create_encodings
+from sequence_labelling.eval import Evaluator
 
 def calculate_acc(model_obj, logits, Y_gold):
         # code from:

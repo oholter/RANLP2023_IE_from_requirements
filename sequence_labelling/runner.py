@@ -6,11 +6,11 @@ from transformers import RobertaForTokenClassification, get_linear_schedule_with
 from torch import nn
 import matplotlib.pyplot as plt
 
-from concat_ner.model import RobertaClassifier, DomainSpecificClassifier, CombinedClassifier, FlairClassifier, RobertaLargeClassifier
-from concat_ner.data_handler import DataHandler
-from concat_ner.train import train_loop, eval
-from concat_ner.token_encoder import RobertaTokenEncoder, ClassicTokenEncoder, CombinedEncoder, FlairTokenEncoder
-from concat_ner.label_encoder import LabelEncoder
+from sequence_labelling.model import RobertaClassifier, DomainSpecificClassifier, CombinedClassifier, FlairClassifier, RobertaLargeClassifier
+from sequence_labelling.data_handler import DataHandler
+from sequence_labelling.train import train_loop, eval
+from sequence_labelling.token_encoder import RobertaTokenEncoder, ClassicTokenEncoder, CombinedEncoder, FlairTokenEncoder
+from sequence_labelling.label_encoder import LabelEncoder
 
 
 LABELS = ["SCOPE", "CONDITION", "DEMAND", "O"]
@@ -150,15 +150,15 @@ def main():
     logging.basicConfig(handlers=[logging.StreamHandler()], format="%(lineno)s::%(funcName)s::%(message)s", level=logging.DEBUG)
     parser = ArgumentParser()
     parser.add_argument("-e", "--epochs", help="number of epochs", default=4, type=int)
-    parser.add_argument("--save", help="paths to save the model", action="store", default="/home/ole/src/Concat_ner/models/model.pt")
-    parser.add_argument("--train", help="file with train data", default="/home/ole/src/Req_annot/annotations_with_scope/train.jsonl")
+    parser.add_argument("--save", help="paths to save the model", action="store", default="./models/model.pt")
+    parser.add_argument("--train", help="file with train data", default="./data/train.jsonl")
     parser.add_argument("--test", help="file with test data")
     parser.add_argument("--lr", help="learning rate", default=0.001, type=float)  # 1e-5, or 3e-5 (6e-5)
     parser.add_argument("--eps", default=1e-8, type=float)
     parser.add_argument("--full_finetuning", default=False, action='store_true')
     parser.add_argument("--flair", help="include flair embeddings in the combined model", default=False, action='store_true')
-    parser.add_argument("--emb_path", help="path to embeddings", default="/home/ole/src/Concat_ner/vectors/dnv_embeddings.pkl")
-    parser.add_argument("--vocab_path", help="path to embed. vocab", default="/home/ole/src/Concat_ner/vectors/dnv_vocab.pkl")
+    parser.add_argument("--emb_path", help="path to embeddings", default="./vectors/dnv_embeddings.pkl")
+    parser.add_argument("--vocab_path", help="path to embed. vocab", default="./vectors/dnv_vocab.pkl")
     parser.add_argument("--test_size", help="train/test-split", default=0.1, type=float)
     parser.add_argument("--model", help="which model (roberta/domain/combined)", default='roberta')
     parser.add_argument("--hidden", help="size of hidden layer", default=200, type=int)

@@ -1,5 +1,5 @@
 """
-Preparing the embeddings for use with the concat-ner project
+Preparing the embeddings for use with the sequence_labelling project
 adding a vocab element and embeddings for
 unk, stop, pad, punct
 
@@ -11,7 +11,7 @@ import logging
 import numpy as np
 from argparse import ArgumentParser
 
-from concat_ner.token_encoder import UNK_IDX, UNK_TOK, PUNCT_IDX, PUNCT_TOK, PAD_IDX, PAD_TOK, STOP_IDX, STOP_TOK
+from sequence_labelling.token_encoder import UNK_IDX, UNK_TOK, PUNCT_IDX, PUNCT_TOK, PAD_IDX, PAD_TOK, STOP_IDX, STOP_TOK
 
 
 

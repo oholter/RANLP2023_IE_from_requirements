@@ -16,30 +16,38 @@ Note: You need requirement sentences extracted from PDF documents to conduct the
 `>>> nltk.download('punkt')`
 `>>> nltk.download('wordnet')`
 
-## Training and experiments
 
-Train one model:
-`python -m concat_ner.runner [args]`
+
+## Experiments: Sequence Labelling
+
+You will most likely want to use GPUs for training and testing as it can take a long time on a CPU.
+
+### Train one model:
+`python -m sequence_labelling.runner [args]`
 
 To reproduce the experiments with one model run:
 ``./run_experiments.sh``
 
 
-## Do n-fold validation (train n models)
+### Do n-fold validation (train n models)
 `python -m evaluation.nfold [--input INPUT -n N --output OUTPUT]`
 
-Remember to do all of this both with context and without context !
+Note: Remember to do the experiments both with context and without context.
 
-
-## Train n models
+### Train n models
 ``./evaluation/train_all.sh [EXPERIMENTS_FOLDER]``
 
-## Evaluate n models
+### Evaluate n models
 `./evaluation/evaluate_all.sh [EXPERIMENTS_FOLDER] [true|false]`
 
-## Aggregate the scores
+### Aggregate the scores
 `python -m evaluation.aggregate [EXPERIMENTS_FOLDER]`
 
-## Print latex macros
-`./evaluation/print_latex [EXPERIMENTS_FOLDER]``
-``
+### Print latex macros
+``./evaluation/print_latex [EXPERIMENTS_FOLDER]``
+
+
+
+
+
+## Experiments with GPT-3

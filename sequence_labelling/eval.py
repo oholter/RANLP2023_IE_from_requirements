@@ -3,7 +3,7 @@ import torch
 from tqdm import tqdm
 from collections import namedtuple
 from copy import deepcopy
-from concat_ner.train_eval_utils import tokenize_and_align_labels
+from sequence_labelling.train_eval_utils import tokenize_and_align_labels
 from sklearn_crfsuite.metrics import flat_classification_report, flat_f1_score
 
 Entity = namedtuple("Entity", "e_type start_offset end_offset")

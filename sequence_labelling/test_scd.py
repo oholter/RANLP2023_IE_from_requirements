@@ -5,13 +5,13 @@ from argparse import ArgumentParser
 from pathlib import Path
 import matplotlib.pyplot as plt
 
-from concat_ner.model import RobertaClassifier, DomainSpecificClassifier, CombinedClassifier, FlairClassifier
-from concat_ner.token_encoder import RobertaTokenEncoder, ClassicTokenEncoder, CombinedEncoder, FlairTokenEncoder
-from concat_ner.train import eval
-from concat_ner.label_encoder import LabelEncoder
-from concat_ner.data_handler import DataHandler
+from sequence_labelling.model import RobertaClassifier, DomainSpecificClassifier, CombinedClassifier, FlairClassifier
+from sequence_labelling.token_encoder import RobertaTokenEncoder, ClassicTokenEncoder, CombinedEncoder, FlairTokenEncoder
+from sequence_labelling.train import eval
+from sequence_labelling.label_encoder import LabelEncoder
+from sequence_labelling.data_handler import DataHandler
 
-from concat_ner.scd_eval_utils import normalize_scopes, normalize_conditions, normalize_demands, save_output, eval_scopes, eval_conditions, eval_demands, output_to_scopes, output_to_conditions, output_to_demands, create_latex_report
+from sequence_labelling.scd_eval_utils import normalize_scopes, normalize_conditions, normalize_demands, save_output, eval_scopes, eval_conditions, eval_demands, output_to_scopes, output_to_conditions, output_to_demands, create_latex_report
 
 LABELS = ["SCOPE", "CONDITION", "DEMAND", "O"]
 

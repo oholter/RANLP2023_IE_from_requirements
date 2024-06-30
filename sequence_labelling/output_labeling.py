@@ -9,10 +9,10 @@ from pathlib import Path
 
 from spacy.training import Alignment
 
-from concat_ner.model import RobertaClassifier, DomainSpecificClassifier, CombinedClassifier, FlairClassifier
-from concat_ner.token_encoder import RobertaTokenEncoder, ClassicTokenEncoder, CombinedEncoder, FlairTokenEncoder
-from concat_ner.label_encoder import LabelEncoder
-from concat_ner.data_handler import DataHandler
+from sequence_labelling.model import RobertaClassifier, DomainSpecificClassifier, CombinedClassifier, FlairClassifier
+from sequence_labelling.token_encoder import RobertaTokenEncoder, ClassicTokenEncoder, CombinedEncoder, FlairTokenEncoder
+from sequence_labelling.label_encoder import LabelEncoder
+from sequence_labelling.data_handler import DataHandler
 
 SEED = 42
 LABELS = ["SCOPE", "CONDITION", "DEMAND", "O"]
