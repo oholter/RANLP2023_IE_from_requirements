@@ -26,7 +26,23 @@ As of June 2024, the documents used in the paper can be downloaded from DNV at h
 You will most likely want to use GPUs for training and testing as it can take a long time on a CPU.
 
 ### Train one model:
-`python -m sequence_labelling.runner [args]`
+`python -m sequence_labelling.runner [OPTIONS]`
+```bash
+OPTIONS:
+--epochs (-e) (INT): number of epochs
+--save (TEXT): Path to save the model file
+--train (TEXT): Path to train data
+--test (TEXT): Path to test data
+--lr (FLOAT): Learning rate
+--eps (FLOAT): EPS
+--full_finetuning (BOOL): Fine-tune the Bert embeddings
+--test_size (FLOAT): the size of the test split
+--model (TEXT): which model to use ([=roberta] in the experiments)
+--hidden (INT): size of the hidden layer
+--graph (-g) (TEXT): path to save loss/f-score graph
+--preprocess (BOOL): case normalization and lemmatization
+--batch_size (-b) (INT): batch size
+```
 
 ### Reproduce the experiments using one model:
 ``./run_experiments.sh``
