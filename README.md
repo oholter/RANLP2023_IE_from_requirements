@@ -26,8 +26,9 @@ As of June 2024, the documents used in the paper can be downloaded from DNV at h
 You will most likely want to use GPUs for training and testing as it can take a long time on a CPU.
 
 ### Train one model:
-`python -m sequence_labelling.runner [OPTIONS]`
 ```bash
+python -m sequence_labelling.runner [OPTIONS]
+
 OPTIONS:
 --epochs (-e) (INT): number of epochs
 --save (TEXT): Path to save the model file
