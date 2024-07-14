@@ -26,7 +26,7 @@ As of June 2024, the documents used in the paper can be downloaded from DNV at h
 You will most likely want to use GPUs for training and testing as it can take a long time on a CPU.
 
 ### Train one model:
-```bash
+```
 python -m sequence_labelling.runner [OPTIONS]
 
 OPTIONS:
