@@ -28,8 +28,8 @@ LABELS = ["SCOPE", "CONDITION", "DEMAND", "O"]
 
 SEED = 42
 
-#ROBERTA_MODEL = 'roberta-base'
-ROBERTA_MODEL = 'roberta-large'
+ROBERTA_MODEL = 'roberta-base'
+#ROBERTA_MODEL = 'roberta-large'
 
 def initialize_combined_model(args, data):
     label_encoder = LabelEncoder(LABELS)
@@ -149,7 +149,7 @@ def initialize_roberta_model(args, data):
 def main():
     logging.basicConfig(handlers=[logging.StreamHandler()], format="%(lineno)s::%(funcName)s::%(message)s", level=logging.DEBUG)
     parser = ArgumentParser()
-    parser.add_argument("-e", "--epochs", help="number of epochs", default=4, type=int)
+    parser.add_argument("-e", "--epochs", help="number of epochs", default=1, type=int)
     parser.add_argument("--save", help="paths to save the model", action="store", default="./models/model.pt")
     parser.add_argument("--train", help="file with train data", default="./data/train.jsonl")
     parser.add_argument("--test", help="file with test data")
