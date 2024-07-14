@@ -11,12 +11,17 @@ As of June 2024, the documents used in the paper can be downloaded from DNV at h
 ## Setup the environment
 
 1. Install the requirements in ``requirements.txt``
+
 ``python -m pip install -r requirements.txt``
 
 2. Download Spacy and NLTK resources:
+
 `python -m spacy download en_core_web_sm`
+
 `>>> import nltk`
+
 `>>> nltk.download('punkt')`
+
 `>>> nltk.download('wordnet')`
 
 
@@ -53,6 +58,7 @@ You may have to change the paths to the annotated documents in ``run_experiments
 ### n-fold validation experiment
 This will create the experiment structure for an n-fold validation experiment
 Note: Remember to do the experiments both with context and without context.
+
 `python -m evaluation.nfold [--input INPUT -n N --output OUTPUT]`
 
 
@@ -77,6 +83,7 @@ In the gpt folder, change the settings in the ``config.json`` file. You need to 
 
 ### Test on one or a number of sentences
 To run the experiment on the requirement with id=1 and id=2:
+
 ``python -m gpt.runner_one -i 1,2``
 
 
