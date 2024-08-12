@@ -1,4 +1,4 @@
-# RANLP2023 Reading Between the Lines: Information Extraction from Textual Requirements
+# RANLP2023 Reading Between the Lines: Information Extraction from Industry Requirements
 
 This repository contains the code used to run the experiments in the paper:
 [Reading Between the Lines: Information Extraction from Industry Requirements](https://aclanthology.org/2023.ranlp-1.76.pdf),
